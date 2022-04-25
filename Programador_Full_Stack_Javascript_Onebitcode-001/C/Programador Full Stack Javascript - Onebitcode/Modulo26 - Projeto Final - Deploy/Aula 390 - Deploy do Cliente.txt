@@ -1,0 +1,25 @@
+    No projeto, crie um arquivo chamado .env e coloque:
+
+    REACT_APP_BASE_API=http://localhost:3001
+
+    Atualize o arquivo api.js:
+
+    const Api = axios.create({baseURL: process.env.REACT_APP_BASE_API})
+
+    Salve as mudanças:
+
+    git init
+    git add .
+    git commit -m 'first deploy'
+
+    Crie o APP no heroku rodando:
+
+    heroku create javascript-notes-client --buildpack mars/create-react-app
+
+    Crie no heroku a variável que aponta para a api:
+
+    heroku config:set REACT_APP_BASE_API='<url da sua api>'
+
+    Suba rodando:
+
+    git push heroku master

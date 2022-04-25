@@ -1,0 +1,32 @@
+#europa_text {
+    font-size: 10px;
+    color: cadetblue;
+}
+
+li {
+    color: red;
+}
+
+h1 {
+    color: purple;
+    font-size: 30px;
+    border-color: yellow;
+    border-width: 2px;
+    border-style: dashed;
+}
+
+body {
+    /* background-color: #333  */
+    background-image: url("https://blog.enem.com.br/wp-content/uploads/2020/06/capa-materia-fog.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pato {
+    font-size: 30px;
+    color: aqua;
+}
+
+.big_text {
+    font-size: 90px;
+}

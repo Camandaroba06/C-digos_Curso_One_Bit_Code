@@ -1,0 +1,21 @@
+Projeto completo no GitHub: https://github.com/escola-de-javascript/JavascriptNotesClient​​​
+
+
+    Gere o projeto com o create react app
+
+    npx create-react-app javascript_note
+
+    Entre na pasta
+    Inicie o servidor
+
+    npm start
+
+    Limpe o arquivo App.js deixando como abaixo:
+
+    <span class="cm-keyword" data-redactor-tag="span" data-redactor-class="cm-keyword" data-verified="redactor">import</span> <span class="cm-def" data-redactor-tag="span" data-redactor-class="cm-def" data-verified="redactor">React</span> <span class="cm-keyword" data-redactor-tag="span" data-redactor-class="cm-keyword" data-verified="redactor">from</span> <span class="cm-string" data-redactor-tag="span" data-redactor-class="cm-string" data-verified="redactor">'react'</span>; 
+    <span class="cm-keyword" data-redactor-tag="span" data-redactor-class="cm-keyword" data-verified="redactor">const</span> <span class="cm-def" data-redactor-tag="span" data-redactor-class="cm-def" data-verified="redactor">App</span> <span class="cm-operator" data-redactor-tag="span" data-redactor-class="cm-operator" data-verified="redactor">=</span> () <span class="cm-operator" data-redactor-tag="span" data-redactor-class="cm-operator" data-verified="redactor">=></span> <span class="cm-tag cm-bracket" data-redactor-tag="span" data-redactor-class="cm-tag cm-bracket" data-verified="redactor"><</span><span class="cm-tag" data-redactor-tag="span" data-redactor-class="cm-tag" data-verified="redactor">p</span><span class="cm-tag cm-bracket" data-redactor-tag="span" data-redactor-class="cm-tag cm-bracket" data-verified="redactor">></span>Javascript Notes<span class="cm-tag cm-bracket" data-redactor-tag="span" data-redactor-class="cm-tag cm-bracket" data-verified="redactor"></</span><span class="cm-tag" data-redactor-tag="span" data-redactor-class="cm-tag" data-verified="redactor">p</span><span class="cm-tag cm-bracket" data-redactor-tag="span" data-redactor-class="cm-tag cm-bracket" data-verified="redactor">></span>
+    <span class="cm-keyword" data-redactor-tag="span" data-redactor-class="cm-keyword" data-verified="redactor">export</span> <span class="cm-keyword" data-redactor-tag="span" data-redactor-class="cm-keyword" data-verified="redactor">default</span> <span class="cm-variable" data-redactor-tag="span" data-redactor-class="cm-variable" data-verified="redactor">App</span>;
+
+    Inicie novamente o servidor
+
+    npm start

@@ -1,0 +1,55 @@
+1 - Atualize o service user:
+
+import Api from "./api";
+
+const UserService = {
+  register: (params) => Api.post("/users/register", params),
+  login: async (params) => {
+    const response = await Api.post("/users/login", params)
+    localStorage.setItem('user', JSON.stringify(response.data.user));
+    localStorage.setItem('token', response.data.token);
+  },
+}
+
+export default UserService;
+
+2 - Atualize o component:
+
+import React, { Fragment, useState } from 'react';
+import { Button, Field, Control, Input, Column, Section, Help } from "rbx";
+
+import UserService from '../../../services/users';
+
+import { Redirect } from "react-router-dom";
+
+function LoginForm() {
+ ...
+
+  const handleSubmit = async (evt) => {
+    evt.preventDefault();
+
+    try {
+      await UserService.login({email: email,password: password});
+      setRedirectToNotes(true);
+    } catch (error) {
+      setError(true)
+    }
+  }
+
+  ...
+
+  return (
+    <Fragment>
+      ...
+          <form onSubmit={handleSubmit}>
+            ...
+          </form>
+        </Column.Group>
+      </Section>
+    </Fragment>
+  )
+
+
+}
+
+export default LoginForm;

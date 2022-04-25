@@ -1,0 +1,96 @@
+    Crie o diretório e o arquivo do component:
+
+    mkdir src/components/header
+    touch src/components/header/index.js
+
+    Baixe as imagens anexadas na página
+    No arquivo header/index.js coloque:
+
+    import React, {useState} from 'react';
+
+    function Header(){
+
+      return(
+
+      )
+    }
+
+    export default Header;
+
+    Agora importe os components Bulma que vamos precisar:
+
+    import { Navbar, Container } from 'rbx';
+
+    Importe o Logo:
+
+    import LogoImage from '../../assets/images/logo.png';
+
+    Crie o Navbar:
+
+    <Navbar>
+      <Container>
+        <Navbar.Brand>
+          <img src={LogoImage} />
+          <Navbar.Burger
+            className="navbar-burger burger" 
+            aria-label="menu" 
+            aria-expanded="false" 
+            data-target="navbar-menu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </Navbar.Burger>
+        </Navbar.Brand>
+
+        <Navbar.Menu id="navbar-menu">
+          <Navbar.Segment as="div" className="navbar-item navbar-end" align="right">
+            Item 1
+          </Navbar.Segment>
+        </Navbar.Menu>
+      </Container>
+    </Navbar>
+
+    Crie o state:
+
+    const [openMenu, setOpenMenu] = useState(false);
+
+    Inclua ele no menu:
+
+    active={openMenu.toString()}
+    onClick={() => setOpenMenu(!openMenu)}>
+
+    Crie um arquivo src/styles/header.scss e adicione o seguinte conteúdo
+
+    @import "./custom_colors";
+
+    nav.navbar {
+      height: 70px;
+      border-bottom: 1px solid black;
+
+      .navbar-brand {  
+        img {
+          height: 40px;
+          margin-top:15px;
+        }
+      }
+    }
+
+    Inclua o arquivo de estilo no component Header:
+
+    import "../../styles/header.scss";
+
+    Atualize o App.js
+
+    import React from 'react';
+    import "./App.scss";
+    import Header from "./components/header";
+
+    const App = () => (
+      <div>
+        <Header />
+      </div>
+    )
+
+    export default App;
+
+​

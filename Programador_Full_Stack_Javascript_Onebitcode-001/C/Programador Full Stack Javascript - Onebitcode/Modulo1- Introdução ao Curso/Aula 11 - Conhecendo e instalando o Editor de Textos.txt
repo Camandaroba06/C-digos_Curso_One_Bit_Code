@@ -1,0 +1,1 @@
+Instale o VS Code acessando: https://code.visualstudio.com

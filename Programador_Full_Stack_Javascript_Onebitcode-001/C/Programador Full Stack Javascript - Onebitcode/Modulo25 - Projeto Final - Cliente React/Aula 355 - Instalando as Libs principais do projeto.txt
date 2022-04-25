@@ -1,0 +1,29 @@
+    Inclua o react router dom
+
+    npm i react-router-dom --save
+
+    Inclua o axios
+
+    npm i axios --save
+
+    Inclua o node sass
+
+    npm i node-sass --save
+
+    Inclua o bulma
+
+    npm i bulma --save
+
+    Inclua o RBX
+
+    npm i rbx --save
+
+    Inclua o Moment
+
+    npm i moment --save
+
+    Inclua o FontAwesome:
+
+    npm i @fortawesome/fontawesome-svg-core --save
+    npm i @fortawesome/free-solid-svg-icons --save
+    npm i @fortawesome/react-fontawesome --save

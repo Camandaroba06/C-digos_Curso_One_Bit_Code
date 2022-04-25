@@ -1,0 +1,6 @@
+    Na tela Users Edit, permita que:
+        O usuário atualize o Name e Email
+        O usuário atualize a senha
+        O usuário delete sua conta
+    No Header Logado:
+        Mostre o nome do usuário no dropdown

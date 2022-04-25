@@ -1,0 +1,18 @@
+/* "*" usa para mudar tudo */
+
+li>a {
+    color: crimson;
+}
+
+/* o simbolo de maior">" faz com que isso c aplique a todos menos os q estão em div */
+h1+h4 {
+    border: dashed 2px;
+}
+
+/* esse faz com q o css c aplique caso haja a sequencia: h1 e depois h4 no html */
+
+a[href="https://www.linkedin.com/in/cristiano-gregory-monfrim-camandaroba-4b29b622b/"] {
+    border: dashed 2px orange;
+}
+
+/* todos os que tiverem esse href vao receber a borda de 2px e laranja */

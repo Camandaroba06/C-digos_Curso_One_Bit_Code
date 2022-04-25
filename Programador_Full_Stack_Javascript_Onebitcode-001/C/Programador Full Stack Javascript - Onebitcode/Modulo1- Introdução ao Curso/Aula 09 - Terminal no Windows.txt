@@ -1,0 +1,14 @@
+﻿1 - Vá até o menu do windows e digite: PowerShell 
+2 - Clique com o botão direito e mande executar como administrador 
+3 - Rode nele:
+
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+4 - Seu computador vai reiniciar 
+5 - Depois que seu computador startar novamente visite a loja do windows. 
+6 - Na loja pesquise por Ubuntu e mande instalar 
+7 - Agora no menu do windows pesquise por Ubuntu e execute. 
+8 - No terminal que vai abrir configure a senha de administrador. 
+9 - Pronto, agora basta usar seu terminal.​
+
+Referência: https://itsfoss.com/install-bash-on-windows​
+https://downloadcursos.top

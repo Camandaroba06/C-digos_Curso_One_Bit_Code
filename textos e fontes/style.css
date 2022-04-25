@@ -1,0 +1,17 @@
+p {
+    font-family: monospace, arial, helvetica;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 45px auto 200px auto;
+    width: 20%;
+}
+
+.imgcentro {
+    text-align: center;
+}

@@ -1,0 +1,39 @@
+﻿Código da Resolução do Exercício
+
+
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício 03</title>
+</head>
+<body>
+    Exercício 03
+</body>
+</html>
+
+
+index.js
+
+let olderPersonName = prompt("Digite o nome da pessoa mais velha")
+let olderPersonAge = prompt("Digite a idade da pessoa mais velha")
+
+let youngerPersonName = prompt("Digite o nome da pessoa mais nova")
+let youngerPersonAge = prompt("Digite a idade da pessoa mais nova")
+
+let ageDifference = olderPersonAge - youngerPersonAge
+
+alert(
+    "Pessoa mais velha: " + olderPersonName + "\nIdade: " + olderPersonAge + 
+    "\n\nPessoa mais nova: " + youngerPersonName + "\nIdade: " + youngerPersonAge +
+    "\n\nDiferença de idade: " + ageDifference
+)
+
+Avalie esta aula:
+
+
+https://downloadcursos.top

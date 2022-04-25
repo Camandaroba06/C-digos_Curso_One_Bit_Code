@@ -1,0 +1,63 @@
+1 - Instale o editor:
+
+npm i react-quill --save
+
+2 - Crie o component rodando:
+
+mkdir src/components/notes/editor
+touch src/components/notes/editor/index.js
+
+3 - Coloque nele:
+
+import React, { Fragment, useState, useEffect } from 'react';
+
+import ReactQuill from 'react-quill'; // ES6
+import 'react-quill/dist/quill.snow.css'; // ES6
+
+function Editor(props) {
+  const [currentContent, setCurrentContent] = useState('')
+
+  useEffect(()=> {
+    setCurrentContent(props.note.body)
+  }, [props.note])
+
+  const modules = {
+    toolbar: [
+      [{ 'header': '1'}, {'header': '2'}, { 'font': [] }],
+      ['bold', 'italic', 'underline', 'strike', 'blockquote', 'code-block'],
+      [{'list': 'ordered'}, {'list': 'bullet'}, 
+       {'indent': '-1'}, {'indent': '+1'}],
+      ['link'],
+      ['clean'],
+    ]
+  }
+
+  return (
+    <Fragment>
+      <ReactQuill value={currentContent} modules={modules}/>
+    </Fragment>
+  )
+}
+
+export default Editor;
+
+4 - Inclua no component Note a inclusão do Editor.
+
+import Editor from "../notes/editor";
+
+5 - Ainda no component Note, inclua a chamada do Editor (Onde tinhamos o Editor...)
+
+<Editor
+  note={current_note}
+/>
+
+6 - Coloque em notes.scss:
+
+.notes-editor{
+  padding: 0;
+  height: calc(100% - 43px);
+
+  .quill{
+    height: 100%;
+  }
+}​
